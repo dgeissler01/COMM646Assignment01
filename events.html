@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice With Jquery Events</title>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(function() {
+            //This button to be used in all button examples DO NOT COMMENT OUT
+            $('body').append('<button id="myButton">Click Me</button>');
+
+            //Step 16
+            // $('button').click(function() {
+            //     window.alert('Button was clicked!');
+            // });
+
+            //Step 17
+            // $('button').bind('click', function() {
+            //     window.alert('Button was clicked via bind()');
+            // });
+
+            //Step 18
+            // $('button').on('click', function() {
+            //     window.alert('Button was clicked via on()');
+            // })
+
+            //Step 19
+            // $('body').append('<br><br><button id="myButton2">Click Me Also!</button>');
+            // $('body').on('click', 'button', function() {
+            //     window.alert('One of the buttons was clicked.');
+            // })
+
+            //Step 20
+            //This div to be used in all div examples DO NOT COMMENT OUT
+            $('body').append('<div style="width:400px;height:400px;background-color:teal;">Here is the div.</div>')
+
+            // $('body').on({
+            //     click: function() {
+            //         window.alert('Div has been clicked!');
+            //     },
+            //     mouseenter: function() {
+            //         window.alert('The mouse has entered the div!');
+            //     },
+            //     mouseleave: function() {
+            //         window.alert('The mouse has left the div!');
+            //     }
+            // }, 'div');
+
+            //Step 21
+            // $('body').on({
+            //     click: function() {
+            //         $('body').append('<span>The div has been clicked!</span><br>')
+            //     },
+            //     mouseenter: function() {
+            //         $('body').append('<span>The mouse has entered the div!</span><br>')
+            //     },
+            //     mouseleave: function() {
+            //         $('body').append('<span>The mouse has left the div!</span><br>')
+            //     }
+            // }, 'div');
+
+            //Step 22
+            // $('body').append('<br><a href="https://www.hugedomains.com/domain_profile.cfm?d=modulemedia&e=commodulemedia.com">Link to Module Media</a>');
+            // $('body').on('click', function(e) {
+            //     e.preventDefault();
+            //     $('a').css('color', 'red');
+            //     window.alert(e.target.nodeName + ' is the node that triggered the event');
+            // });
+
+            //Step 23
+            // $(window).resize(function () {
+            //     $('div').css('background-color','red').text('Width: ' + $(window).width() + ' ' + 'Height: ' + $(window).height());
+            // });
+
+            //Step 24
+            // $('body').append('<br><input type="text">')
+            // $('body').on({
+            //     focus: function() {
+            //         $('input').css('background-color', 'lightgrey');
+            //     },
+            //     blur: function() {
+            //         $('input').css('background-color', 'white'); 
+            //     }
+            // }, 'input');
+
+            //Step 25
+            // $('body').append('<form></form>');
+            // $('form').append('<br>' + 'Name: ' + '<input type="text" for="name" id="name">');
+            // $('form').append('<br>' + 'Email: ' + '<input type="text" for="email" id="email">');
+            // $('form').append('<br><br>' + '<button type="submit" id="submit">Submit</button>');
+
+            // $('#submit').on('click', function(e) {
+            //     let name = $('#name').val();
+            //     let email = $('#email').val();
+            //     e.preventDefault();
+            //     console.log(name, email);
+            //     if (name === '' && email === '') {
+            //         $('#name').css('border', '2px solid red');
+            //         $('#email').css('border', '2px solid red');
+            //         window.alert('Please enter a name and email address.');
+            //     } else if (name === '') {
+            //         $('#name').css('border', '2px solid red');
+            //         window.alert('Please enter a name.');
+            //     } else if (email === '') {
+            //         $('#email').css('border', '2px solid red');
+            //         window.alert('Please enter an email address.');
+            //     } 
+            //     else {
+            //         $('#name').css('border', '2px solid green');
+            //         $('#email').css('border', '2px solid green');
+            //     }
+            // });
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
